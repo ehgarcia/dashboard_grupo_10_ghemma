@@ -1,12 +1,12 @@
 import React, {Fragment} from 'react'
-import mandalorian from '../assets/images/mandalorian.jpg'
+
 
 export function ContentRowTop() {
   return (
     <Fragment>
       				<div className="container-fluid">
 					<div className="d-sm-flex align-items-center justify-content-between mb-4">
-						<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+						<h1 className="h3 mb-0 text-gray-800">App Dashboard Ghemma Store</h1>
 					</div>
 				
 
@@ -18,7 +18,7 @@ export function ContentRowTop() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Movies in Data Base</div>
+											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Devices In Database</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
 										</div>
 										<div className="col-auto">
@@ -35,7 +35,7 @@ export function ContentRowTop() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total awards</div>
+											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total Vendors</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
 										</div>
 										<div className="col-auto">
@@ -52,7 +52,7 @@ export function ContentRowTop() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Actors quantity
+											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Users Accounts
 											</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
 										</div>
@@ -70,14 +70,14 @@ export function ContentRowTop() {
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Last movie in Data Base</h5>
+									<h5 className="m-0 font-weight-bold text-gray-800">Last Device added in DataBase</h5>
 								</div>
 								<div className="card-body">
 									<div className="text-center">
-										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: `40rem`}} src={mandalorian} alt=" Star Wars - Mandalorian " />
+										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: `40rem`}} src={'https://www.mgmstore.com.ar/1442-home_default/Apple-iPhone-14-Pro-Max-1TB.jpg'} alt=" Star Wars - Mandalorian " />
 									</div>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-									<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
+									<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View Device detail</a>
 								</div>
 							</div>
 						</div>
@@ -85,80 +85,53 @@ export function ContentRowTop() {
 						<div className="col-lg-6 mb-4">						
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Genres in Data Base</h5>
+									<h5 className="m-0 font-weight-bold text-gray-800">Categories in Database</h5>
 								</div>
 								<div className="card-body">
 									<div className="row">
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Acción
+													CellPhone
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Animación
+													Laptop
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Aventura
+													Tablet
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Ciencia Ficción
+													Smart Tv
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Comedia
+													Watches 
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Documental
+													Accesories
 												</div>
 											</div>
 										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Drama
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Fantasia
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Infantiles
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Musical
-												</div>
-											</div>
-										</div>
+		
 
 									</div>
 								</div>
