@@ -1,11 +1,13 @@
 const express = require("express");
 const app = express();
-const userRoutes = require("./routes/user.routes.js");
+const usersRoutes = require("./routes/users.routes.js");
+const productsRoutes = require("./routes/products.routes.js")
 
 
-app.use(userRoutes)
+app.use(usersRoutes)
 
 
-app.use("/api", userRoutes);
+app.use("/api/users", usersRoutes);
+app.use("/api/products", productsRoutes);
 
 app.listen('4000', () => console.log('Servidor corriendo en el puerto 4000'))
