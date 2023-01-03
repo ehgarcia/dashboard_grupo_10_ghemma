@@ -9,7 +9,6 @@
 - Luego en una de las terminales hacemos $cd backend y en la otra hacemos $cd frontend<br>
 ![cd_front_back](/assets/cd_front_back.png "cd front and back")
 
-cd_front_back
 
 - Ejecutamos en la terminal $npm i en las dos terminales para instalar las dependencias tanto del back como del front.<br>
 ![npm_i](/assets/npm_i.png "npm install")
