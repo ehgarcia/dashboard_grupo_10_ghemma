@@ -16,7 +16,7 @@ export function UsersAccounts() {
   return (
     <Fragment>
         { user ? (
-						<div className="col-md-4 mb-4">
+						<div className="col-md-6 mb-4">
                         <div className="card border-left-success shadow h-100 py-2">
                             <div className="card-body">
                                 <div className="row no-gutters align-items-center">
