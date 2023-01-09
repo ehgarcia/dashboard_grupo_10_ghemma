@@ -1,10 +1,24 @@
-import React, {Fragment} from 'react'
+import React, { Fragment, useEffect, useState } from "react";
 import { Devices } from './Devices'
 import {UsersAccounts} from './UsersAccounts'
 import { LastProduct } from './LastProduct'
+import { Categorys } from './Categorys'
 
 
 export function ContentRowTop() {
+
+	const [category, setCategory] = useState(null)
+
+    useEffect (() => {
+      fetch("http://localhost:4000/api/categorys", { mode: 'cors' })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setCategory(data)
+      })
+    }, [])
+
+
   return (
     <Fragment>
       			<div className="container">
@@ -29,53 +43,16 @@ export function ContentRowTop() {
 								<div className="card-header py-3">
 									<h5 className="m-0 font-weight-bold text-gray-800">Categories in Database</h5>
 								</div>
-								
+
 								<div className="card-body">
 									<div className="row">
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													CellPhone
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Laptop
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Tablet
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Smart Tv
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Watches 
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 mb-4">
-											<div className="card bg-dark text-white shadow">
-												<div className="card-body">
-													Accesories
-												</div>
-											</div>
-										</div>
-		
 
+									{
+										category.map( ( row , i) => {
+											return <Categorys { ...row} key={i}/>
+										})
+									}
+									
 									</div>
 								</div>
 							</div>
