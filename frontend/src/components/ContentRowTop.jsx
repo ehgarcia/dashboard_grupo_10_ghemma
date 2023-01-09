@@ -19,7 +19,7 @@ export function ContentRowTop() {
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
 											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Devices In Database</div>
-											<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
+											<div className="h5 mb-0 font-weight-bold text-gray-800">6</div>
 										</div>
 										<div className="col-auto">
 											<i className="fas fa-film fa-2x text-gray-300"></i>
@@ -36,7 +36,7 @@ export function ContentRowTop() {
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
 											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total Vendors</div>
-											<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
+											<div className="h5 mb-0 font-weight-bold text-gray-800">2</div>
 										</div>
 										<div className="col-auto">
 											<i className="fas fa-award fa-2x text-gray-300"></i>
@@ -54,7 +54,7 @@ export function ContentRowTop() {
 										<div className="col mr-2">
 											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Users Accounts
 											</div>
-											<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
+											<div className="h5 mb-0 font-weight-bold text-gray-800">1</div>
 										</div>
 										<div className="col-auto">
 											<i className="fas fa-user fa-2x text-gray-300"></i>
@@ -76,7 +76,6 @@ export function ContentRowTop() {
 									<div className="text-center">
 										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: `40rem`}} src={'https://www.mgmstore.com.ar/1442-home_default/Apple-iPhone-14-Pro-Max-1TB.jpg'} alt=" Star Wars - Mandalorian " />
 									</div>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
 									<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View Device detail</a>
 								</div>
 							</div>
