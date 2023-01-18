@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export function Categories() {
-  return (
-    <div>Categories</div>
-  )
+  return <div>Categories</div>;
 }

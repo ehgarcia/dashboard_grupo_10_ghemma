@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import logo from "../assets/images/logo-DH.png";
 import { Link, Routes, Route } from "react-router-dom";
 import { ContentWrapper } from "./ContentWrapper";
-import {Products} from "./Products";
-import {NotFound404} from "./NotFound404";
-import {Categories} from "./Categories";
-import {UsersRow} from "./UsersRow"
+import { Products } from "./Products";
+import { NotFound404 } from "./NotFound404";
+import { Categories } from "./Categories";
+import { UsersRow } from "./UsersRow";
 
 export function SideBar() {
   return (
