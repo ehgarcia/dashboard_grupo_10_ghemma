@@ -37,14 +37,14 @@ export function SideBar() {
         <div className="sidebar-heading">Actions</div>
 
         <li className="nav-item">
-          <Link className="nav-link collapsed" to="/products">
+          <Link className="nav-link" to="/products">
             <i className="fas fa-fw fa-folder"></i>
             <span>Products</span>
           </Link>
         </li>
 
         <li className="nav-item">
-          <Link clLinkssName="nav-link" to="/categories">
+          <Link className="nav-link" to="/categories">
             <i className="fas fa-fw fa-chart-area"></i>
             <span>Categories</span>
           </Link>
