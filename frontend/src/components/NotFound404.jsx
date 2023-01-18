@@ -2,7 +2,7 @@ import React from 'react'
 import errorPicture from '../assets/images/404-error.png'
 import '../assets/css/error.css';
 
-export default function NotFound404() {
+export function NotFound404() {
   return (
     <div className="container error">
        

@@ -2,7 +2,10 @@ import React, { Fragment } from "react";
 import logo from "../assets/images/logo-DH.png";
 import { Link, Routes, Route } from "react-router-dom";
 import { ContentWrapper } from "./ContentWrapper";
-import NotFound404 from "./NotFound404";
+import {Products} from "./Products";
+import {NotFound404} from "./NotFound404";
+import {Categories} from "./Categories";
+import {UsersRow} from "./UsersRow"
 
 export function SideBar() {
   return (
@@ -13,7 +16,7 @@ export function SideBar() {
       >
         <Link
           className="sidebar-brand d-flex align-items-center justify-content-center"
-          href="/"
+          to="/"
         >
           <div className="sidebar-brand-icon">
             <img className="w-100" src={logo} alt="Digital House" />
@@ -23,10 +26,10 @@ export function SideBar() {
         <hr className="sidebar-divider my-0" />
 
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <Link className="nav-link" to="/">
             <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard - Ghemma</span>
-          </a>
+          </Link>
         </li>
 
         <hr className="sidebar-divider" />
@@ -34,24 +37,24 @@ export function SideBar() {
         <div className="sidebar-heading">Actions</div>
 
         <li className="nav-item">
-          <a className="nav-link collapsed" href="/">
+          <Link className="nav-link collapsed" to="/products">
             <i className="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
-          </a>
+            <span>Products</span>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <Link clLinkssName="nav-link" to="/categories">
             <i className="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
-          </a>
+            <span>Categories</span>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <Link className="nav-link" to="/users">
             <i className="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-          </a>
+            <span>Users</span>
+          </Link>
         </li>
 
         <hr className="sidebar-divider d-none d-md-block" />
@@ -59,6 +62,9 @@ export function SideBar() {
       <hr />
       <Routes>
         <Route path="/" element={<ContentWrapper />}></Route>
+        <Route path="/products" element={<Products />}></Route>
+        <Route path="/categories" element={<Categories />}></Route>
+        <Route path="/users" element={<UsersRow />}></Route>
         <Route path="*" element={<NotFound404 />}></Route>
       </Routes>
     </Fragment>
