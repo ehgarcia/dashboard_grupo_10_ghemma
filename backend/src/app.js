@@ -12,4 +12,4 @@ app.use("/api/users", usersRoutes);
 app.use("/api/products", productsRoutes);
 app.use('/api/categorys', categorysRoutes)
 
-app.listen('3050', () => console.log('Servidor corriendo en el puerto 4000'))
+app.listen('3050', () => console.log('Servidor corriendo en el puerto 3050'))

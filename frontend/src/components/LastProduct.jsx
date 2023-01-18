@@ -28,7 +28,7 @@ export function LastProduct() {
                                 <div className="text-center">
                                     <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: `40rem`}} src={arrayProduct[arrayProduct.length -1].image} alt={`${arrayProduct[arrayProduct.length -1].name}`} />
                                 </div>
-                                <a className="btn btn-danger" rel="nofollow" href={`http://localhost:4000/api/products/${arrayProduct[arrayProduct.length -1].id}`}>View Device detail</a>
+                                <a className="btn btn-danger" rel="nofollow" href={`http://localhost:3050/api/products/${arrayProduct[arrayProduct.length -1].id}`}>View Device detail</a>
                             </div>
                         </div>
                     </div>
