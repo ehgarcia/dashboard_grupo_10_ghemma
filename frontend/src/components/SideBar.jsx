@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import logo from "../assets/images/logo-DH.png";
+import { Link, Routes, Route } from "react-router-dom";
+import { ContentWrapper } from "./ContentWrapper";
 
 export function SideBar() {
   return (
@@ -8,14 +10,14 @@ export function SideBar() {
         className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
-        <a
+        <Link
           className="sidebar-brand d-flex align-items-center justify-content-center"
           href="/"
         >
           <div className="sidebar-brand-icon">
             <img className="w-100" src={logo} alt="Digital House" />
           </div>
-        </a>
+        </Link>
 
         <hr className="sidebar-divider my-0" />
 
@@ -54,6 +56,9 @@ export function SideBar() {
         <hr className="sidebar-divider d-none d-md-block" />
       </ul>
       <hr />
+      <Routes>
+        <Route path="/" element={<ContentWrapper />}></Route>
+      </Routes>
     </Fragment>
   );
 }
