@@ -15,7 +15,7 @@ export function UsersRow() {
   let [users, setUsers] = useState(tableRowsData);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/users")
+    fetch("http://localhost:3050/api/users")
       .then((response) => response.json())
       .then((data) => {
         const { users } = data;
@@ -26,6 +26,7 @@ export function UsersRow() {
   return (
     <Fragment>
       {users ? (
+        <div className="container-fluid">
         <div className="card shadow mb-4">
           <div className="card-body">
             <div className="table-responsive">
@@ -53,6 +54,7 @@ export function UsersRow() {
             </div>
           </div>
         </div>
+      </div>
       ) : tableRowsData}
     </Fragment>
   );

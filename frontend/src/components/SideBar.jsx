@@ -59,7 +59,6 @@ export function SideBar() {
 
         <hr className="sidebar-divider d-none d-md-block" />
       </ul>
-      <hr />
       <Routes>
         <Route path="/" element={<ContentWrapper />}></Route>
         <Route path="/products" element={<Products />}></Route>

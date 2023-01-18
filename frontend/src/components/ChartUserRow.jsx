@@ -5,8 +5,8 @@ export function ChartUsersRow(props) {
     <Fragment>
       <tr>
         <td>{props.id}</td>
-        <td>{props.nombre}</td>
-        <td>{props.apellido}</td>
+        <td>{props.name}</td>
+        <td>{props.lastName}</td>
         <td>{props.email}</td>
       </tr>
     </Fragment>
