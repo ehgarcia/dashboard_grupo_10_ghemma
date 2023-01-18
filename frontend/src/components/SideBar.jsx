@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import logo from "../assets/images/logo-DH.png";
 import { Link, Routes, Route } from "react-router-dom";
 import { ContentWrapper } from "./ContentWrapper";
+import NotFound404 from "./NotFound404";
 
 export function SideBar() {
   return (
@@ -58,6 +59,7 @@ export function SideBar() {
       <hr />
       <Routes>
         <Route path="/" element={<ContentWrapper />}></Route>
+        <Route path="*" element={<NotFound404 />}></Route>
       </Routes>
     </Fragment>
   );
