@@ -5,7 +5,7 @@ export function Devices() {
     const [product, setProduct] = useState(null)
 
     useEffect (() => {
-      fetch("http://localhost:4000/api/products", { mode: 'cors' })
+      fetch("http://localhost:3050/api/products", { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
