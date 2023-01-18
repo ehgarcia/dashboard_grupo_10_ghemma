@@ -4,10 +4,10 @@ import { ChartUsersRow } from "./ChartUserRow";
 
 let tableRowsData = [
     {
-      id: "Cargando...",
-      nombre: "Cargando...",
-      apellido: "Cargando...",
-      email: "Cargando...",
+      id: "Loanding...",
+      name: "Loanding...",
+      lastName: "Loanding...",
+      email: "Loanding...",
     }
   ]
 
@@ -39,8 +39,8 @@ export function UsersRow() {
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
                     <th>Email</th>
                   </tr>
                 </thead>
