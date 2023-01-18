@@ -8,13 +8,12 @@ export function LastProduct() {
       fetch("http://localhost:3050/api/products", { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setProduct(data)
+        const { products } = data
+        setProduct(products)
       })
     }, [])
 
     const arrayProduct = product
-    console.log(arrayProduct)
 
   return (
     <Fragment>

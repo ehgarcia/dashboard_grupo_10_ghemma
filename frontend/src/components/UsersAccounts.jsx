@@ -8,15 +8,15 @@ export function UsersAccounts() {
       fetch("http://localhost:3050/api/users", { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setUser(data)
+        const { users } = data
+        setUser(users )
       })
     }, [])
 
   return (
     <Fragment>
         { user ? (
-						<div className="col-md-6 mb-4">
+						<div className="col-md-4 mb-4">
                         <div className="card border-left-success shadow h-100 py-2">
                             <div className="card-body">
                                 <div className="row no-gutters align-items-center">

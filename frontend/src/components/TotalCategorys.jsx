@@ -1,28 +1,27 @@
 import React, { Fragment, useEffect, useState } from "react";
 
-export function Devices() {
+export function TotalCategorys() {
 
-    const [product, setProduct] = useState(null)
+	const [category, setCategory] = useState(null)
 
     useEffect (() => {
-      fetch("http://localhost:3050/api/products", { mode: 'cors' })
+      fetch("http://localhost:3050/api/categorys", { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
-        const { products } = data
-        setProduct(products)
+        setCategory(data)
       })
     }, [])
 
   return (
     <Fragment>
-        { product ? (
+        { category ? (
             <div className="col-md-4 mb-4">
             <div className="card border-left-primary shadow h-100 py-2">
                 <div className="card-body">
                     <div className="row no-gutters align-items-center">
                         <div className="col mr-2">
-                            <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Devices In Database</div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">{product.length}</div>
+                            <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Categories</div>
+                            <div className="h5 mb-0 font-weight-bold text-gray-800">{category.length}</div>
                         </div>
                         <div className="col-auto">
                             <i className="fas fa-film fa-2x text-gray-300"></i>

@@ -3,6 +3,7 @@ import { Devices } from './Devices'
 import {UsersAccounts} from './UsersAccounts'
 import { LastProduct } from './LastProduct'
 import { Categorys } from './Categorys'
+import { TotalCategorys } from "./TotalCategorys";
 
 
 export function ContentRowTop() {
@@ -13,7 +14,6 @@ export function ContentRowTop() {
       fetch("http://localhost:3050/api/categorys", { mode: 'cors' })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setCategory(data)
       })
     }, [])
@@ -32,6 +32,7 @@ export function ContentRowTop() {
 
 					<Devices />
 					<UsersAccounts />
+					<TotalCategorys />
 
 					</div>
 
