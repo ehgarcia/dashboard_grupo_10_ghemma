@@ -39,7 +39,7 @@ export function TopBar() {
             <span className="mr-2 d-none d-lg-inline text-gray-600 small">
               Marcelo Ramirez
             </span>
-            <img
+            <img 
               className="img-profile rounded-circle"
               src={profilePicture}
               alt="Jordan Walke - Creador de React"

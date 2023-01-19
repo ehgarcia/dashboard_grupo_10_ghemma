@@ -19,7 +19,7 @@ export function SideBar() {
           to="/"
         >
           <div className="sidebar-brand-icon">
-            <img className="w-100" src={logo} alt="Digital House" />
+            <img  className="w-50" src={logo} alt="Digital House" />
           </div>
         </Link>
 
