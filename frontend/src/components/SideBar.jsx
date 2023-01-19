@@ -4,7 +4,6 @@ import { Link, Routes, Route } from "react-router-dom";
 import { ContentWrapper } from "./ContentWrapper";
 import { Products } from "./Products";
 import { NotFound404 } from "./NotFound404";
-import { Categories } from "./Categories";
 import { UsersRow } from "./UsersRow";
 
 export function SideBar() {
@@ -44,13 +43,6 @@ export function SideBar() {
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/categories">
-            <i className="fas fa-fw fa-chart-area"></i>
-            <span>Categories</span>
-          </Link>
-        </li>
-
-        <li className="nav-item">
           <Link className="nav-link" to="/users">
             <i className="fas fa-fw fa-table"></i>
             <span>Users</span>
@@ -62,7 +54,6 @@ export function SideBar() {
       <Routes>
         <Route path="/" element={<ContentWrapper />}></Route>
         <Route path="/products" element={<Products />}></Route>
-        <Route path="/categories" element={<Categories />}></Route>
         <Route path="/users" element={<UsersRow />}></Route>
         <Route path="*" element={<NotFound404 />}></Route>
       </Routes>
